@@ -53,7 +53,7 @@ class Dog
     sql = <<-SQL
       SELECT *
       FROM dogs
-      WHERE name = ?
+      WHERE name = ?"
     SQL
 
     DB[:conn].execute(sql,name).map do |row|
